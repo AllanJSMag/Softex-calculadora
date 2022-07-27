@@ -1,16 +1,4 @@
-'''import time
-
-tempoInicial = 60
-tempoFinal = 0
-
-print("Iniciando contagem regressiva!")
-
-for i in range(tempoInicial, tempoFinal, -1):
-	print(i)
-	time.sleep(1)
-
-print("BUM!")'''
-
+#FUNÇÃO PARA FAZER AS QUATRO OPERAÇÕES COM DOIS NUMEROS
 
 from ntpath import realpath
 
@@ -28,8 +16,10 @@ def calculadora (num1, num2, operacao):
 		res = 0
 	return res
 
-num1 = 10
-num2 = 4
-operacao = 1
+print("Bem-vindo! \n")
+print("Que tipo de operação você quer realizar?\n")
+operacao = int(input('Digite (1 - soma; 2 - subtração; 3 - multiplicação; 4 - divisão) :'))
+num1 = float(input('Digite o primeiro número:'))
+num2 = float(input('Digite o segundo número:'))
 resultado = calculadora(num1, num2, operacao)
-print(resultado)
+print("O resultado esperado é = " + str(resultado))
